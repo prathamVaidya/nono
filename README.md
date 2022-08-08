@@ -14,9 +14,9 @@ Nono CLI is a development tool to speed up your development process. You can use
 
 - Other Manager Commands
 
-  `nono list` -> To view list of installed templates
-  `nono install <FOLDER-PATH>`-> To install a template from directory.
-  `nono remove <TEMPLATE-NAME>` -> To uninstall an installed template.
+  `nono list` -> To view list of installed templates  
+  `nono install <FOLDER-PATH>`-> To install a template from directory  
+  `nono remove <TEMPLATE-NAME>` -> To uninstall an installed template
 
 ## Requirements:
 
