@@ -1,0 +1,19 @@
+{
+  "name": "nono",
+  "version": "1.0.0",
+  "description": "CLI for Microservice architecture. Allow installation of any template or boiler-plate code",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "nono": "cli.js"
+  },
+  "author": "Pratham Vaidya",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "fs-extra": "^10.1.0",
+    "replace-in-file": "^6.3.5"
+  }
+}

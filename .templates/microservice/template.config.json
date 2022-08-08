@@ -1,0 +1,52 @@
+{
+  "name": "microservice",
+  "author": "Pratham Vaidya",
+  "scripts": {
+    "init": "cd gateway; npm i"
+  },
+  "variables": [
+    {
+      "name": "PROJECT_NAME",
+      "default": "project",
+      "path": [".env*"],
+      "case": "lowercase"
+    }
+  ],
+
+  "modules": [
+    {
+      "name": "service",
+      "path": "service/",
+      "default": false,
+      "scripts": {
+        "init": "cd <--service_name-->; npm i"
+      },
+      "variables": [
+        {
+          "name": "SERVICE_NAME",
+          "path": [".env*", "src/server.js", "package.json"],
+          "case": "lowercase"
+        },
+
+        {
+          "name": "PORT",
+          "default": 3000,
+          "path": [".env*"]
+        },
+
+        {
+          "name": "PROJECT_NAME",
+          "default": "project",
+          "path": [".env*", "package.json"],
+          "case": "lowercase",
+          "inherit": true
+        }
+      ]
+    },
+    {
+      "name": "gateway",
+      "path": "gateway/",
+      "default": true
+    }
+  ]
+}
